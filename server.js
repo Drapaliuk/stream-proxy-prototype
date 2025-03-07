@@ -2,7 +2,7 @@ const http = require('http');
 const { URL } = require('url');
 
 const proxy = http.createServer((req, res) => {
-    const targetUrl = req.url.slice(1); // Видаляємо перший '/'
+    const targetUrl = req.url.slice(1);
     if (!targetUrl.startsWith('http')) {
         res.writeHead(400, { 'Content-Type': 'text/plain' });
         return res.end('Invalid URL');
