@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+}
+</style>
+<body>
+    <div class="wrapper">
+        <div>
+            <span> Proxied stream: </span>
+            <a href="http://localhost:3000/http://kunv.oit.unlv.edu:8000/;">http://localhost:3000/http://kunv.oit.unlv.edu:8000/;</a>
+        </div>
+        <audio width="352" height="198" controls>
+            <source src="http://localhost:3000/http://kunv.oit.unlv.edu:8000/;">
+        </audio>
+    </div>
+    <hr>
+    <div class="wrapper">
+        <div>
+            <span> Original stream: </span>
+            <a href="http://kunv.oit.unlv.edu:8000/;">http://localhost:3000/</a>
+        </div>
+        <audio width="352" height="198" controls>
+            <source src="http://kunv.oit.unlv.edu:8000/;">
+        </audio>
+    </div>
+</body>
+<!-- <script src="./script.js"></script> -->
+</html>
+
+
